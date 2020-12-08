@@ -21,8 +21,12 @@
     --reature-head-color: #212121;
 
     /*чем мы занимаемся*/
-    --wedo-head-color: #212121;
+    --head-color: #212121;
     --item-bgcolor: #757575;
+    
+    /*наша команда*/
+    --bgcolor-section-our-team: #F5F4FA;
+    --head-color: #212121;
 }
 /*===============================*/
 
@@ -336,7 +340,7 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: var(--wedo-head-color);
+    color: var(--head-color);
 }
 /*список секции*/
 .wedo-list {
@@ -354,6 +358,38 @@ a {
     width: 370px;
     height: 294px;
     background-color: var(--item-bgcolor);
+}
+
+/*===наша команда===*/
+
+/*контейнер наша команда*/
+.conteiner-our-team {
+}
+/*секция наша команда*/
+.our-team {
+}
+/*оглавление секции*/
+.header-our-team {
+}
+/*список наша команда*/
+.list-our-team {
+}
+/*элемент списка*/
+.item-list-our-team {
+}
+/*карточка*/
+.card {
+}
+.card-caption {
+}
+.card-header {
+}
+.card-text {
+}
+/*иконки карточке соц. ситей*/
+.card-social-icon {
+}
+.social-icon {
 }
 
 /*=========================*/
