@@ -34,6 +34,16 @@
     --social-icon: #AFB1B8;
     --social-ico-acent: #fff;
 
+    /*постоянные клиенты*/
+    --heder-color: #212121;
+    --icon-link-color: #AFB1B8;
+
+    /*подвал*/
+    --footer-bgcolor: #2F303A;
+    --logo-text-color: #fff;
+    --footer-address-contact: rgba(255, 255, 255, 0.6);
+    --logo-text-color-10p: rgba(255, 255, 255, 0.1);
+
         /*ПОРТФОЛИО*/
 
     /*cссылки навигации*/
@@ -48,9 +58,7 @@
     --card-head: #212121;
     --card-text: #757575;
 
-    /*постоянные клиенты*/
-    --heder-color: #212121;
-    --icon-link-color: #AFB1B8;
+
 }
 /*===============================*/
 
@@ -519,16 +527,18 @@ a {
 } 
 
 /*постоянные клиенты*/
-
+/*контейнел секции*/
 .conteiner-clients {
     max-width: 1700px;
     height: 182px;
     margin: 94px auto 94px auto;
 }
+/*секция постоянные клиенты*/
 .clients {
     width: 1170px;
     margin: 0 auto 0 auto;
 }
+/*оглавление секции*/
 .header-client {
     font-family: var(--Roboto);
     font-style: normal;
@@ -540,6 +550,7 @@ a {
     color: var(--heder-color);
     
 }
+/*список постоянных клиентов*/
 .list-client-icon {
     display: flex;
     width: 170px;
@@ -547,9 +558,11 @@ a {
     margin-top: 50px;
 
 }
+/*отступ элемента списка*/
 .item-client-icon:not(:last-child) {
     margin-right: 30px;
 }
+/*ссылка*/
 .link-icon {
     display: flex;
     align-items: center;
@@ -559,14 +572,13 @@ a {
     color: var(--icon-link-color);
     border: 1px solid;
     border-radius: 4px;
-    
-
 }
-/*.client-icon {
-    width: 45px;
-    height: 50px;
-    
-}*/
+/*акцент ссылок*/
+.link-icon:hover,
+.link-icon:focus {
+    color: var(--acent-color);
+}
+/*иконки постоянных клиентов*/
 .logo-1{
     width: 45px;
     height: 50px;
@@ -602,7 +614,119 @@ a {
 /*=========================*/
 
 /*=====ПОДВАЛ=====*/
+.footer{
+    width: 1600px;
+    margin: 0 auto 0 auto;
+    padding: 0 215px 0 215px;
+    background-color: var(--footer-bgcolor);
+    display: flex;
+}
+/*блок ссылок и навигации*/
+.contat-navigation {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-right: 70px;
+    
+}
+/*логотип*/
+.footer-logo-left {
+    font-family: var(--Raleway);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--acent-color);
+}
+.footer-logo-right {
+    font-family: var(--Raleway);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--logo-text-color);
+}
+/*блок контактов*/
+.address {
+    padding: 0;
+    margin-top: 20px;
+}
+/*список контактов*/
+.footer-address-list {
+}
+.footer-address-location {
+}
+.footer-address-location-link {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
 
+    color: var(--logo-text-color);
+}
+.footer-address-contact {
+    margin-top: 9px;
+
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+
+    
+}
+.footer-address-contact-link {
+    color: var(--footer-address-contact);
+}
+/*блок социальных ссылок*/
+.social {
+    margin-top: 72px;
+}
+/*призыв*/
+.slogan {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--logo-text-color);
+}
+.connect-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.connect-item {
+    margin-right: 10px;   
+}
+
+.connect-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--logo-text-color-10p);
+    color:var(--logo-text-color)
+}
+.connect-link:hover,
+.connect-link:focus {
+    background-color: var(--acent-color);
+}
+.connect-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
 /*================*/
 
 /*##################################################*/
