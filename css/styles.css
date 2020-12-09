@@ -551,7 +551,9 @@ a {
     margin-right: 30px;
 }
 .link-icon {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 90px;
     color: var(--icon-link-color);
