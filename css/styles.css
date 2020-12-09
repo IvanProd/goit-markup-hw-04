@@ -31,6 +31,7 @@
     /*наша команда*/
     --bgcolor-section-our-team: #F5F4FA;
     --head-color: #212121;
+    --card-text: #757575;
 }
 /*===============================*/
 
@@ -297,10 +298,9 @@ a {
 }
 /*элементы списка*/
 .features-item {
-    max-width: 270px;
-    
+    max-width: 270px;   
 }
-.item-margin {
+.indent {
     margin-right: 30px;
 }
 .features-item::before {
@@ -401,33 +401,103 @@ a {
 
 /*контейнер наша команда*/
 .conteiner-our-team {
+    max-width: 1700px;
+    margin: 94px auto 0 auto;
 }
 /*секция наша команда*/
 .our-team {
+    width: 1600px;
+    min-height: 708px;
+    margin: 0 auto 0 auto;
+    padding: 94px 215px 0 215px;
+    background-color: var(--bgcolor-section-our-team);
 }
 /*оглавление секции*/
 .header-our-team {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--head-color);
 }
 /*список наша команда*/
 .list-our-team {
+    margin-top: 50px;
+    display: flex;
 }
 /*элемент списка*/
-.item-list-our-team {
+.item-list-our-team:not(:last-child) {
+    margin-right: 30px;
 }
 /*карточка*/
 .card {
+    width: 270px;
+    height: 428px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .card-caption {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .card-header {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+
+    color: var(--head-color);
 }
 .card-text {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--card-text);
 }
 /*иконки карточке соц. ситей*/
 .card-social-icon {
+    display: flex;
+    width: 206px;
+    height: 44px;
+    margin: 0 auto 0 auto;
 }
 .social-icon {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+.facebook {
+    margin-right: 10px;
+    background-image: url('../svg/social/facebook.svg');
+}
+.instagram {
+    margin-right: 10px;
+    background-image: url('../svg/social/instagram.svg');
+}
+.linkedin {
+    background-image: url('../svg/social/linkedin.svg');
+}
+.twitter {
+    margin-right: 10px;
+    background-image: url('../svg/social/twitter.svg');
+} */
 
 /*=========================*/
 
