@@ -1,5 +1,9 @@
 /*=====Переременные по сайту=====*/
 :root {
+    /*Шрифты*/
+    --Roboto: Roboto, sans-serif;
+    --Raleway: Raleway, sans-serif;
+
     /*общее*/
     --acent-color: #2196F3;/*использует logo; hover; focus; hero-bottom */
     
@@ -88,7 +92,7 @@ a {
 }
 /*левая сторона*/
 .logo-left {
-    font-family: Raleway;
+    font-family: var(--Raleway);
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -99,7 +103,7 @@ a {
 }
 /*правая сторона*/
 .logo-right {
-    font-family: Raleway;
+    font-family: var(--Raleway);
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -116,7 +120,7 @@ a {
 }
 /*список навигации*/
 .navigation-list {
-    font-family: Roboto;
+    font-family: var(--Roboto);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -139,7 +143,8 @@ a {
 }
 /*===ССЫЛКИ КОНТАКТЫ===*/
 .address {
-    font-family: Roboto;
+    display: flex;
+    font-family: var(--Roboto);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -147,27 +152,45 @@ a {
     letter-spacing: 0.02em;
 
     padding: 32px 0 32px 0;
-    /*background-color: palevioletred;*/
+
 }
 /*ссылка почта*/
 .contact-link-mail {
+    display: inline-flex;
+    align-items: center;
     color: var(--contact-link);
     margin-right: 30px;
 }
-/*?.contact-link-mail::before { */
-/*?  display: inline-block; */
-/*?   margin-right: 10px; */
-/*?   background-image: url("../svg/icons/envelope.svg"); */
-/*? color: var(--contact-link); */
-/*? } */
+.ico-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: var(--contact-link);
+}
 .contact-link-mail:hover,
 .contact-link-mail:focus {
     color: var(--acent-color);
 }
 /*ссылка телефон*/
 .contact-link-telephon{
+    display: inline-flex;
+    align-items: center;
     color: var(--contact-link);
 }
+.contact-link-telephon::before {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    content: '';
+    background-image: url('../svg/icon.svg#Vector');
+
+}
+/*.ico-tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url('../svg/icon.svg#Vector');
+}*/
 .contact-link-telephon:hover,
 .contact-link-telephon:focus {
     color: var(--acent-color);
@@ -211,7 +234,7 @@ a {
     margin-right: auto;
     margin-bottom: 30px;
 
-    font-family: Roboto;
+    font-family: var(--Roboto);
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -280,17 +303,33 @@ a {
 .item-margin {
     margin-right: 30px;
 }
-/*иконки элемента*/
-.features-icon {
-    width: 270px;
+.features-item::before {
+    content: "";
+    display: block;
     height: 120px;
     border: none;
     border-radius: 4px;
     background-color: var(--bgcolor-feature-icon);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*иконки элемента*/
+.icon-antenna::before {
+    background-image: url('../svg/features/antenna.svg');
+}
+.icon-astronaut::before {
+    background-image: url('../svg/features/astronaut.svg');
+}
+.icon-clock::before {
+    background-image: url('../svg/features/clock.svg');
+}
+.icon-diagram::before {
+    background-image: url('../svg/features/diagram.svg');
 }
 /*шапка элемента*/
 .features-head {
-    font-family: Roboto;
+    font-family: var(--Roboto);
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -304,7 +343,7 @@ a {
 }
 /*текст элемента*/
 .fearures-text {
-    font-family: Roboto;
+    font-family: var(--Roboto);
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -332,7 +371,7 @@ a {
 /*оглавление секции*/
 .header-wedo {
     margin: 0 auto 50px auto;
-    font-family: Roboto;
+    font-family: var(--Roboto);
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -347,8 +386,6 @@ a {
     list-style: none;
     width: 1170px;
     margin: 0 auto 0 auto;
-    /*margin-left: auto;
-    margin-right: auto;*/
     padding: 0px;
     display: flex;
     justify-content: space-between;
