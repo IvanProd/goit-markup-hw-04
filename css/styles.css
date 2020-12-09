@@ -163,12 +163,14 @@ a {
     color: var(--contact-link);
     margin-right: 30px;
 }
+/*иконка почты*/
 .ico-mail {
     width: 16px;
     height: 12px;
     margin-right: 10px;
     fill: currentColor;
 }
+/*акцент почты*/
 .contact-link-mail:hover,
 .contact-link-mail:focus {
     color: var(--acent-color);
@@ -179,12 +181,14 @@ a {
     align-items: center;
     color: var(--contact-link);
 }
+/*иконка телефона*/
 .ico-tel {
     width: 10px;
     height: 16px;
     margin-right: 10px;
     fill: currentColor;
 }
+/*акцент телефона*/
 .contact-link-telephon:hover,
 .contact-link-telephon:focus {
     color: var(--acent-color);
