@@ -476,28 +476,28 @@ a {
     margin: 0 auto 0 auto;
 }
 .social-icon {
-    display: block;
     width: 44px;
     height: 44px;
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
+    padding: 12px;
+    margin-right: 10px;
 }
 .facebook {
-    margin-right: 10px;
-    background-image: url('../svg/social/facebook.svg');
+    width: 20px;
+    height: 20px;
 }
 .instagram {
-    margin-right: 10px;
-    background-image: url('../svg/social/instagram.svg');
+    width: 20px;
+    height: 20px;
+
 }
 .linkedin {
-    background-image: url('../svg/social/linkedin.svg');
+    width: 20px;
+    height: 20px;
 }
 .twitter {
-    margin-right: 10px;
-    background-image: url('../svg/social/twitter.svg');
-} */
+    width: 20px;
+    height: 20px;
+} 
 
 /*=========================*/
 
