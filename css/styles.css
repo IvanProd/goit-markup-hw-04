@@ -47,6 +47,10 @@
     --project-card-border-color: #EEEEEE;
     --card-head: #212121;
     --card-text: #757575;
+
+    /*постоянные клиенты*/
+    --heder-color: #212121;
+    --icon-link-color: #AFB1B8;
 }
 /*===============================*/
 
@@ -489,7 +493,7 @@ a {
 .social-icon:hover,
 .social-icon:focus {
     background-color: var(--acent-color);
-    border-radius: 22px;
+    border-radius: 50%;
     color: var(--social-ico-acent);
 }
 /*иконки соцсетей*/
@@ -514,7 +518,84 @@ a {
     fill: currentColor;
 } 
 
-/**/
+/*постоянные клиенты*/
+
+.conteiner-clients {
+    max-width: 1700px;
+    height: 182px;
+    margin: 94px auto 94px auto;
+}
+.clients {
+    width: 1170px;
+    margin: 0 auto 0 auto;
+}
+.header-client {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--heder-color);
+    
+}
+.list-client-icon {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    margin-top: 50px;
+
+}
+.item-client-icon:not(:last-child) {
+    margin-right: 30px;
+}
+.link-icon {
+    display: inline-block;
+    width: 170px;
+    height: 90px;
+    color: var(--icon-link-color);
+    border: 1px solid;
+    border-radius: 4px;
+    
+
+}
+/*.client-icon {
+    width: 45px;
+    height: 50px;
+    
+}*/
+.logo-1{
+    width: 45px;
+    height: 50px;
+    fill: currentColor;
+
+}
+.logo-2{
+    width: 40px;
+    height: 52px;
+    fill: currentColor;
+}
+.logo-3{
+    width: 41px;
+    height: 43px;
+    fill: currentColor;
+}
+.logo-4{
+    width: 80px;
+    height: 42px;
+    fill: currentColor;
+}
+.logo-5{
+    width: 59px;
+    height: 47px;
+    fill: currentColor;
+}
+.logo-6{
+    width: 89px;
+    height: 46px;
+    fill: currentColor;
+}
 
 /*=========================*/
 
