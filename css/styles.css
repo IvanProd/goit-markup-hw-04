@@ -8,7 +8,6 @@
     --acent-color: #2196F3;/*использует logo; hover; focus; hero-bottom */
     
     /*шапка*/
-    --acent-color: #2196F3;
     --black-color: #000000;
     --navigation-color: #212121;
     --contact-link: #757575;
@@ -32,6 +31,8 @@
     --bgcolor-section-our-team: #F5F4FA;
     --head-color: #212121;
     --card-text: #757575;
+    --social-icon: #AFB1B8;
+    --social-ico-acent: #fff;
 }
 /*===============================*/
 
@@ -464,23 +465,37 @@ a {
     height: 44px;
     padding: 12px;
     margin-right: 10px;
+    color: var(--social-icon);
+    
+    
+    /*outline: 1px solid green;*/
 }
+.social-icon:hover,
+.social-icon:focus {
+    background-color: var(--acent-color);
+    border-radius: 22px;
+    color: var(--social-ico-acent);
+}
+/*иконки соцсетей*/
 .facebook {
     width: 20px;
     height: 20px;
+    fill: currentColor;
 }
 .instagram {
     width: 20px;
     height: 20px;
-
+    fill: currentColor;
 }
 .linkedin {
     width: 20px;
     height: 20px;
+    fill: currentColor;
 }
 .twitter {
     width: 20px;
     height: 20px;
+    fill: currentColor;
 } 
 
 /*=========================*/
