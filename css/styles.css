@@ -847,6 +847,11 @@ a {
     font-size: 16px;
     line-height: 1.625;
     color: var(--portfolio-button-text-active-color);
+    outline: none;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-common {
     margin-right: 8px;
@@ -922,17 +927,18 @@ a {
     /*технический*/
     /*outline: 1px solid red;*/
 }
-.project-card:hover,
-.project-card:focus {
+
+.card-link:hover,
+.card-link:focus {
+    display: block;
+    height: 404px;  
+    
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
                 0px 4px 4px rgba(0, 0, 0, 0.06), 
                 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.card-link {
-    
     /*outline: 1px solid green;*/
 }
 .caption{
