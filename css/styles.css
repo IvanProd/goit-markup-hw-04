@@ -1,8 +1,8 @@
 /*=====Переременные по сайту=====*/
 :root {
     /*Шрифты*/
-    --Roboto: Roboto, sans-serif;
-    --Raleway: Raleway, sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --Raleway: 'Raleway', sans-serif;
 
     /*общее*/
     --acent-color: #2196F3;/*использует logo; hover; focus; hero-bottom */
@@ -108,11 +108,15 @@ a {
     margin-right: auto;
     border-bottom: var(--border-line);
     
+    /*outline: 1px solid tan;*/
 }
-.heder-section {
+.conteiner-header {
+    width: 1200px;
     display: flex;
-    padding-left: 215px;
-    padding-right: 215px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto 0 auto;
+
+    /*outline: 1px solid tan;*/
 }
 /*===ЛОГОТИП===*/
 .logo {
@@ -180,8 +184,9 @@ a {
     line-height: 1.142;
     letter-spacing: 0.02em;
 
-    padding: 32px 0 32px 0;
-
+    margin: 32px 0 32px 0;
+    
+    /*outline: 1px solid tan;*/
 }
 /*ссылка почта*/
 .contact-link-mail {
@@ -227,13 +232,13 @@ a {
 /*====ГЕРОЙ===*/
 
 /*контейнер героя*/
-.conteiner-hero {
+.hero {
     min-width: 1600px;
     min-height: 600px;
-    /*background-color: var(--hero-background-color);*/
 }
+
 /*оформление секции герой и фона*/
-.hero {
+.conteiner-hero {
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -241,11 +246,12 @@ a {
     padding-top: 200px;
     padding-bottom: 200px;
 
+
     background-color: var(--hero-background-color);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/main/hero_background/background.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/hero_background/background.jpg");
 }
 /*оглавление георя*/
 /*оглавление секции*/
@@ -302,13 +308,13 @@ a {
 /*контейнер секции особнности*/
 .conteiner-features {
     margin-top: 94px;
-    max-width: 1700px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 /*секция особенности*/
 .features {
-    width: 1170px;
+    width: 1600px;
     min-height: 251px;
     margin: 0 auto 0 auto;
 }
