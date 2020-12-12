@@ -101,7 +101,7 @@ a {
     margin-left: auto;
     margin-right: auto;
 
-    outline: 1px solid gold;
+    /*outline: 1px solid gold;*/
 }
 /*=====ШАПКА=====*/
 .heder {
@@ -111,14 +111,14 @@ a {
     margin-right: auto;
     border-bottom: var(--border-line);
     
-    outline: 1px solid tan;
+    /*outline: 1px solid tan;*/
 }
 .conteiner-header {
     width: 1200px;
     display: flex;
     margin: 0 auto 0 auto;
 
-    outline: 1px solid tan;
+    /*outline: 1px solid tan;*/
 }
 /*===ЛОГОТИП===*/
 .logo {
@@ -438,7 +438,7 @@ a {
     max-width: 1170px;
     margin:  auto 0 auto;
 
-    outline: 1px solid greenyellow;
+    /*outline: 1px solid greenyellow;*/
 }
 /*секция наша команда*/
 .our-team {
@@ -448,7 +448,7 @@ a {
     padding: 94px 215px 0 215px;
     background-color: var(--bgcolor-section-our-team);
 
-    outline: 1px solid green;
+    /*outline: 1px solid green;*/
 }
 /*оглавление секции*/
 .header-our-team {
@@ -467,7 +467,7 @@ a {
     margin-top: 50px;
     display: flex;
 
-    outline: ;
+    /*outline: 1px solid yellow;*/
 }
 /*элемент списка*/
 .item-list-our-team:not(:last-child) {
