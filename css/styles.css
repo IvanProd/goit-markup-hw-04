@@ -692,6 +692,11 @@ a {
     
 }
 /*логотип*/
+.footer-logo:focus{
+    color: var(--project-card-bgcolor);
+    text-decoration: underline;
+
+}
 .footer-logo-left {
     font-family: var(--Raleway);
     font-style: normal;
@@ -731,6 +736,9 @@ a {
 
     color: var(--logo-text-color);
 }
+.footer-address-location-link:focus{
+    text-decoration: underline;
+}
 .footer-address-contact {
     margin-top: 9px;
 
@@ -745,6 +753,9 @@ a {
 }
 .footer-address-contact-link {
     color: var(--footer-address-contact);
+}
+.footer-address-contact-link:focus{
+    text-decoration: underline;
 }
 /*блок социальных ссылок*/
 .social {
