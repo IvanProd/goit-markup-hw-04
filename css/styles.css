@@ -108,7 +108,6 @@ a {
 /*=============================*/
 
 .mani-pag {
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
 
@@ -449,22 +448,22 @@ a {
 
 /*===наша команда===*/
 
-/*контейнер наша команда*/
-.conteiner-our-team {
-    max-width: 1170px;
-    margin:  auto 0 auto;
-
-    /*outline: 1px solid greenyellow;*/
-}
 /*секция наша команда*/
 .our-team {
-    width: 1600px;
+    min-width: 1600px;
     min-height: 708px;
     margin: 94px auto 0 auto;
     padding: 94px 215px 0 215px;
     background-color: var(--bgcolor-section-our-team);
 
     /*outline: 1px solid green;*/
+}
+/*контейнер наша команда*/
+.conteiner-our-team {
+    max-width: 1170px;
+    margin: 0 auto 0 auto;
+
+    /*outline: 1px solid greenyellow;*/
 }
 /*оглавление секции*/
 .header-our-team {
@@ -519,7 +518,7 @@ a {
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    text-align: center;
+
     letter-spacing: 0.03em;
     color: var(--card-text);
     margin-top: 10px;
@@ -533,19 +532,20 @@ a {
     height: 44px;
     margin: 16px auto 30px auto;
 }
-.item-social-icon {
+.card-social-icon-item {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
+    margin-right: 10px;
 }
 /*ссылка иконок карточки*/
 .social-icon {
     width: 44px;
     height: 44px;
     padding: 12px;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
     color: var(--social-icon);
     
     
@@ -580,7 +580,8 @@ a {
     fill: currentColor;
 } 
 
-/*постоянные клиенты*/
+/*===постоянные клиенты===*/
+
 /*контейнел секции*/
 .conteiner-clients {
     max-width: 1700px;
@@ -669,17 +670,25 @@ a {
 
 /*=====ПОДВАЛ=====*/
 .footer{
+    margin: 0 auto 0 auto;
+    background-color: var(--footer-bgcolor);
+    
+    /*  outline: 1px solid gold;*/
+}
+/*контейнер подвала*/
+.conteiner-footer{
     width: 1600px;
     margin: 0 auto 0 auto;
-    padding: 0 215px 0 215px;
-    background-color: var(--footer-bgcolor);
     display: flex;
+    padding: 0 70px 0 70px;
+    /*outline: 1px solid green;*/
 }
 /*блок ссылок и навигации*/
-.contat-navigation {
+.contaсt-navigation {
     padding-top: 60px;
     padding-bottom: 60px;
     margin-right: 70px;
+
     
 }
 /*логотип*/
@@ -705,6 +714,7 @@ a {
 .address {
     padding: 0;
     margin-top: 20px;
+    /*outline: 1px solid tan;*/
 }
 /*список контактов*/
 .footer-address-list {
@@ -738,7 +748,8 @@ a {
 }
 /*блок социальных ссылок*/
 .social {
-    margin-top: 72px;
+    margin: 72px 0 100px 0;
+    /*outline: 1px solid teal;*/
 }
 /*призыв*/
 .slogan {
@@ -752,6 +763,7 @@ a {
     
     color: var(--logo-text-color);
 }
+/*список иконок соцсетей*/
 .connect-list {
     display: flex;
     align-items: center;
@@ -772,10 +784,12 @@ a {
     background-color: var(--logo-text-color-10p);
     color:var(--logo-text-color)
 }
+/*выдиление иконок соцсетей*/
 .connect-link:hover,
 .connect-link:focus {
     background-color: var(--acent-color);
 }
+/*иконка*/
 .connect-icon {
     width: 20px;
     height: 20px;
