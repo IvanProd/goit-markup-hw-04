@@ -108,6 +108,8 @@ a {
 /*=============================*/
 
 .mani-pag {
+    max-width: 1700px;
+    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
 
@@ -115,7 +117,7 @@ a {
 }
 /*=====ШАПКА=====*/
 .heder {
-    width: 1600px;
+    max-width: 1600px;
     min-height: 80px;
     margin-left: auto;
     margin-right: auto;
@@ -124,7 +126,7 @@ a {
     /*outline: 1px solid tan;*/
 }
 .conteiner-header {
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     margin: 0 auto 0 auto;
@@ -182,6 +184,7 @@ a {
 .navigation-link {
     color: var(--navigation-color-link);
 }
+/*фокус текущей странички */
 .accent {
     color: var(--acent-color);
 }
@@ -249,7 +252,7 @@ a {
 
 /*контейнер героя*/
 .hero {
-    width: 1600px;
+    max-width: 1600px;
     min-height: 600px;
     margin: 0 auto 0 auto;
     /*outline: 1px solid red;*/
@@ -335,7 +338,7 @@ a {
 }
 /*секция особенности*/
 .features {
-    width: 1600px;
+    max-width: 1600px;
     min-height: 251px;
     margin: 94px auto 0 auto;
 
@@ -409,7 +412,7 @@ a {
 }
 /*секция чем мы занимаеся*/
 .wedo {
-    width: 1600px;
+    max-width: 1600px;
     min-height: 386px;
     margin: 94px auto 0 auto;
 
@@ -590,7 +593,7 @@ a {
 }
 /*секция постоянные клиенты*/
 .clients {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto 0 auto;
 }
 /*оглавление секции*/
@@ -677,7 +680,7 @@ a {
 }
 /*контейнер подвала*/
 .conteiner-footer{
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto 0 auto;
     display: flex;
     padding: 0 70px 0 70px;
@@ -722,10 +725,10 @@ a {
     /*outline: 1px solid tan;*/
 }
 /*список контактов*/
-.footer-address-list {
+/*.footer-address-list {
 }
 .footer-address-location {
-}
+}*/
 .footer-address-location-link {
     font-family: var(--Roboto);
     font-style: normal;
@@ -813,11 +816,13 @@ a {
 /*##################################################*/
 
 .portfolio-page{
+    max-width: 1700px;
+    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
 }
 .main-box {
-    width: 1600px;
+    max-width: 1600px;
     box-sizing: border-box;
     margin: 0 auto;
     
@@ -849,10 +854,10 @@ a {
     /*border: 1px solid blue;*/
 }
 .portfolio-navigation-item {
-    
+    margin-right: 8px;
 
     /*технический*/
-   /* border: 1px solid red;*/
+    /*outline: 1px solid red;*/
 }
 .portfoli-button {
     background: var(--portfolio-button-bgcolor);
@@ -864,8 +869,9 @@ a {
     line-height: 1.625;
     letter-spacing: 0.03em;
     color: var(--portfolio-button-text-color);
-    font-family: var(--maine-font);
+    font-family: var(--Roboto);
     
+    min-height: 38px;
 }
 .portfoli-button:hover,
 .portfoli-button:focus {
@@ -883,10 +889,7 @@ a {
                 0px 1px 2px rgba(0, 0, 0, 0.08), 
                 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.button-common {
-    margin-right: 8px;
-    min-height: 38px;
-}
+
 /*===индивидуальный стилизация===*/
 .all {
     width: 78px;
@@ -948,10 +951,11 @@ a {
 .card-link:hover,
 .card-link:focus {
     display: block;
+    width: 370px;
     height: 404px;  
-    
+
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    /*border: 1px solid #EEEEEE;*/
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
                 0px 4px 4px rgba(0, 0, 0, 0.06), 
