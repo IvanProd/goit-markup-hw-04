@@ -91,9 +91,20 @@ a {
 }
 
 
-/*=====техническая обводка=====*/
+/*=====техническая элементы=====*/
 /*==== outline: 1px green; ====*/
-
+.missing-conteiner {
+    width: 960px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+}
+.missing{
+    font-family: var(--Roboto);
+    color: black;
+}
 /*=============================*/
 
 .mani-pag {
@@ -116,6 +127,7 @@ a {
 .conteiner-header {
     width: 1200px;
     display: flex;
+    align-items: center;
     margin: 0 auto 0 auto;
 
     /*outline: 1px solid tan;*/
@@ -171,13 +183,17 @@ a {
 .navigation-link {
     color: var(--navigation-color-link);
 }
+.accent {
+    color: var(--acent-color);
+}
 .navigation-link:hover,
 .navigation-link:focus {
     color: var(--acent-color);
 }
 /*===ССЫЛКИ КОНТАКТЫ===*/
-.address {
+.header-address {
     display: flex;
+    align-items: center;
     font-family: var(--Roboto);
     font-style: normal;
     font-weight: 500;
@@ -486,7 +502,6 @@ a {
 .card-caption {
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 .team-card-header {
     font-family: var(--Roboto);
@@ -507,6 +522,7 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--card-text);
+    margin-top: 10px;
 }
 /*иконки карточк соц. ситей*/
 .card-social-icon {
@@ -515,7 +531,7 @@ a {
     justify-content: center;
     width: 206px;
     height: 44px;
-    margin: 0 auto 0 auto;
+    margin: 16px auto 30px auto;
 }
 .item-social-icon {
     display: flex;
