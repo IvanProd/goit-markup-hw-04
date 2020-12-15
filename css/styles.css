@@ -63,7 +63,7 @@
 /*===============================*/
 
 /*=====глобальный сброс=====*/
-ul,li,p,figure,figcaption,h1,h2,h3,p{
+ul,li,p,figure,h1,h2,h3,p{
     margin: 0px;
     padding: 0px;
 }
@@ -255,6 +255,7 @@ a {
     min-height: 600px;
     margin: 0 auto 0 auto;
     /*outline: 1px solid red;*/
+    
 }
 
 /*оформление секции герой и фона*/
@@ -268,10 +269,11 @@ a {
 
 
     background-color: var(--hero-background-color);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/hero_background/background.jpg");
+    overflow: hidden;
 
     /*outline: 1px solid green;*/
 }
@@ -971,13 +973,12 @@ a {
                 0px 4px 4px rgba(0, 0, 0, 0.06), 
                 1px 4px 6px rgba(0, 0, 0, 0.16);
     /*outline: 1px solid green;*/
-}
-    
-}
+}   
 .caption{
     width: 322px;
     height: 70px;
     margin: 20px 24px ;
+    padding-left: 20px;
 
     /*outline: 1px solid yellowgreen;*/
 }
