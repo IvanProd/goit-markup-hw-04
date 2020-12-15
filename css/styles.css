@@ -977,7 +977,8 @@ a {
 .caption{
     width: 322px;
     height: 70px;
-    margin: 20px 24px ;
+    margin-top: 20px;
+    margin-bottom: 24px;
     padding-left: 20px;
 
     /*outline: 1px solid yellowgreen;*/
