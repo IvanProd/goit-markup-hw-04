@@ -67,18 +67,16 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 }
 
 /*===== шапка =====*/
-.line{
-    border-bottom: 1px solid var(--head-bottom-line);
-}
 .header {
+    padding: 24px 0 25px;
+    border-bottom: 1px solid var(--head-bottom-line);
+    background-color: var(--header-bakeground-color);
+}
+.header__box{
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    padding: 24px 0 25px;
-    
-    background-color: var(--header-bakeground-color);
 }
-
 /*навигация страницы*/
 .navigation {
     margin: 0 331px 0 0;
@@ -107,7 +105,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 
 /*список сылок навигации*/
 .navigation__list {
-    display: flex;
+    display: inline-flex;
     width: 294px;
 
     padding: 0;
@@ -319,16 +317,12 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
     margin-top: 50px;
     list-style: none;
 }
-.oure-teame-list, a{
-    font-family: var(--maine-font);
-    text-decoration: none;
-    color: var(--team-head-color);
-}
+
 /*карточка участника команды*/
 .oure-teame__card {
     width: 270px;
     height: 368px;
-    padding-bottom: 30px;
+
     background: var(--project-card-bgcolor);
     box-sizing: border-box;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -338,6 +332,12 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
     margin-right: 30px;
 }
 /*подпись карточки*/
+.oure-teame__description{
+    font-family: var(--maine-font);
+
+    padding: 30px 0;
+
+}
 .oure-teame__card-head {
     font-style: normal;
     font-weight: 500;
@@ -345,10 +345,10 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
     line-height: 1.187;
     letter-spacing: 0.03em;
     text-align: center;
-
-    margin-top: 30px;
+    color: var(--team-head-color);
 }
 .oure-teame__card-text {
+    font-family: var(--maine-font);
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -477,7 +477,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 .project__item {
     flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
-    margin-right: 30px;
+    margin-left: 30px;
 
     width: 370px;
     height: 404px;
