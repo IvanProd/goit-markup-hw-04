@@ -37,6 +37,11 @@
     --team-card-bgcolor: #fff;
     --social-icon-color: #AFB1B8;
 
+    /* постоянные клиенты */
+    --clients-header: #212121;
+    --clients-item-borter: #AFB1B8;
+    --clients-item-border-accent: #2196F3;
+
     /*подвал*/
     --footer-bgcolor: #2F303A;
     --footer-logo-left: #2196F3;
@@ -430,16 +435,52 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 }
 
 .clients {
+    padding: 94px 0;
 }
 .clients__head {
+    font-family: var(--maine-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--clients-header);
 }
 .clients__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    list-style: none;
 }
 .clients__item {
+
+}
+.clients__item:not(:last-child) {
+    margin-right: 30px;
 }
 .clients__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--clients-item-borter);
+
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--clients-item-borter);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.clients__link:hover,
+.clients__link:focus{
+    color: var(--clients-item-border-accent);
+    border-color: var(--clients-item-border-accent);
 }
 .clients__icon {
+    fill: currentColor;
 }
 
 /*подвал*/
