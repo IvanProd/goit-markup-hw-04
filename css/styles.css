@@ -679,18 +679,17 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 
     width: 370px;
     height: 404px;
-    background: var(--project-card-bgcolor);
-    
-    box-sizing: border-box;
-
 }
 
 .card__link {
     display: block;
+    background: var(--project-card-bgcolor);
     border: 1px solid var(--project-card-border-color);
+    box-sizing: border-box;
 }
 .card__link:hover,
 .card__link:focus{
+    outline: none;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .caption{
