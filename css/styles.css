@@ -683,6 +683,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 
 .card__link {
     display: block;
+    text-decoration: none;
     background: var(--project-card-bgcolor);
     border: 1px solid var(--project-card-border-color);
     box-sizing: border-box;
